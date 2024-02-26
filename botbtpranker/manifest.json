@@ -1,0 +1,545 @@
+{
+  "source_base_path": "C:/Users/andrea/source/repos/BotBtpRanker/_docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DependencyInjection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.IBondFetcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.IBondFetcher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.IBondRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.IBondRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.IBondService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.IBondService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.BondService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.BondService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.App.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.Layout.MainLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.Layout.MainLayout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.Layout.NavMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.Layout.NavMenu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.Layout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.Pages.Bot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.Pages.Bot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.Pages.Btp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.Pages.Btp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.Pages.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.Pages.Error.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.Pages.Home.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.Pages.Home.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.Pages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.Pieces.BondList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.Pieces.BondList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.Pieces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.Pieces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.Routes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.Routes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components._Imports.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components._Imports.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.Components.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.Components.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.HostedServices.TimedDataFetcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.HostedServices.TimedDataFetcher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazorApp.HostedServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazorApp.HostedServices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.Bond.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.Bond.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.BondSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.BondSnapshot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.BondValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.BondValues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exeptions.FailedToParseExeption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exeptions.FailedToParseExeption.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exeptions.FailedToScrapeExeption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exeptions.FailedToScrapeExeption.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exeptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exeptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.DependencyInjection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Fetcher.BondFetcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Fetcher.BondFetcher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Fetcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Fetcher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Mapping.AutoMapperProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Mapping.AutoMapperProfile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Mapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Mapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Options.DatabaseOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Options.DatabaseOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Options.FetcherOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Options.FetcherOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repository.BondRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repository.BondRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repository.Models.BondDbModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repository.Models.BondDbModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repository.Models.BondSnapshotDbModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repository.Models.BondSnapshotDbModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repository.Models.BondValuesDbModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repository.Models.BondValuesDbModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repository.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repository.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.BondFetcherTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.BondFetcherTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.BondRepositoryTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.BondRepositoryTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

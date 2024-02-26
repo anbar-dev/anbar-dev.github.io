@@ -1,0 +1,252 @@
+{
+  "api/Application.DependencyInjection.html": {
+    "href": "api/Application.DependencyInjection.html",
+    "title": "Class DependencyInjection | BotBtpRanker",
+    "keywords": "Class DependencyInjection Namespace Application Assembly Application.dll public static class DependencyInjection Inheritance object DependencyInjection Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddApplicationServices(IServiceCollection) public static IServiceCollection AddApplicationServices(this IServiceCollection service) Parameters service IServiceCollection Returns IServiceCollection"
+  },
+  "api/Application.Interfaces.IBondFetcher.html": {
+    "href": "api/Application.Interfaces.IBondFetcher.html",
+    "title": "Interface IBondFetcher | BotBtpRanker",
+    "keywords": "Interface IBondFetcher Namespace Application.Interfaces Assembly Application.dll Represents a service for fetching bonds. public interface IBondFetcher Methods FetchBondsAsync(string) Fetches bond snapshots asynchronously based on the specified type of bond. Task<IEnumerable<BondSnapshot>> FetchBondsAsync(string typeOfBond) Parameters typeOfBond string The type of bond to fetch. Returns Task<IEnumerable<BondSnapshot>> A collection of bond snapshots."
+  },
+  "api/Application.Interfaces.IBondRepository.html": {
+    "href": "api/Application.Interfaces.IBondRepository.html",
+    "title": "Interface IBondRepository | BotBtpRanker",
+    "keywords": "Interface IBondRepository Namespace Application.Interfaces Assembly Application.dll Represents a service for storing bonds. public interface IBondRepository Methods CreateDatabaseIfNotExists() Creates the database if it doesn't exist. void CreateDatabaseIfNotExists() CreateTablesIfNotExists() Creates tables if they don't exist. void CreateTablesIfNotExists() GetActiveBondsAsync(string) Retrieves active bonds asynchronously based on the bond type. Task<IList<Bond>> GetActiveBondsAsync(string typeOfBond) Parameters typeOfBond string Type of bond. Returns Task<IList<Bond>> List of active bonds. StoreBondSnapshots(IEnumerable<BondSnapshot>, string) Stores bond snapshots. void StoreBondSnapshots(IEnumerable<BondSnapshot> bondSnapshotDbDtos, string typeOfBond) Parameters bondSnapshotDbDtos IEnumerable<BondSnapshot> typeOfBond string Type of bond."
+  },
+  "api/Application.Interfaces.IBondService.html": {
+    "href": "api/Application.Interfaces.IBondService.html",
+    "title": "Interface IBondService | BotBtpRanker",
+    "keywords": "Interface IBondService Namespace Application.Interfaces Assembly Application.dll Represents a service for managing bonds. public interface IBondService Methods AcquireBondSnapshotsAsync(string) Asynchronously acquires bond snapshots of the specified type and stores them in the database. Task AcquireBondSnapshotsAsync(string typeOfBond) Parameters typeOfBond string The type of bond for which snapshots are to be acquired. Returns Task A task representing the asynchronous operation. GetBonds(string) Asynchronously retrieves active bonds of the specified type from the database. Task<IList<Bond>> GetBonds(string typeOfBond) Parameters typeOfBond string The type of bond to retrieve. Returns Task<IList<Bond>> A list of active bonds."
+  },
+  "api/Application.Interfaces.html": {
+    "href": "api/Application.Interfaces.html",
+    "title": "Namespace Application.Interfaces | BotBtpRanker",
+    "keywords": "Namespace Application.Interfaces Interfaces IBondFetcher Represents a service for fetching bonds. IBondRepository Represents a service for storing bonds. IBondService Represents a service for managing bonds."
+  },
+  "api/Application.Services.BondService.html": {
+    "href": "api/Application.Services.BondService.html",
+    "title": "Class BondService | BotBtpRanker",
+    "keywords": "Class BondService Namespace Application.Services Assembly Application.dll Represents a service for managing bonds. public class BondService : IBondService Inheritance object BondService Implements IBondService Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors BondService(IBondRepository, IBondFetcher) public BondService(IBondRepository bondRepository, IBondFetcher dataFetcher) Parameters bondRepository IBondRepository dataFetcher IBondFetcher Methods AcquireBondSnapshotsAsync(string) Asynchronously acquires bond snapshots of the specified type and stores them in the database. public Task AcquireBondSnapshotsAsync(string typeOfBond) Parameters typeOfBond string The type of bond for which snapshots are to be acquired. Returns Task A task representing the asynchronous operation. GetBonds(string) Asynchronously retrieves active bonds of the specified type from the database. public Task<IList<Bond>> GetBonds(string typeOfBond) Parameters typeOfBond string The type of bond to retrieve. Returns Task<IList<Bond>> A list of active bonds."
+  },
+  "api/Application.Services.html": {
+    "href": "api/Application.Services.html",
+    "title": "Namespace Application.Services | BotBtpRanker",
+    "keywords": "Namespace Application.Services Classes BondService Represents a service for managing bonds."
+  },
+  "api/Application.html": {
+    "href": "api/Application.html",
+    "title": "Namespace Application | BotBtpRanker",
+    "keywords": "Namespace Application Classes DependencyInjection"
+  },
+  "api/BlazorApp.Components.App.html": {
+    "href": "api/BlazorApp.Components.App.html",
+    "title": "Class App | BotBtpRanker",
+    "keywords": "Class App Namespace BlazorApp.Components Assembly BlazorApp.dll public class App : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender Inheritance object ComponentBase App Implements IComponent IHandleEvent IHandleAfterRender Inherited Members ComponentBase.OnInitialized() ComponentBase.OnInitializedAsync() ComponentBase.OnParametersSet() ComponentBase.OnParametersSetAsync() ComponentBase.StateHasChanged() ComponentBase.ShouldRender() ComponentBase.OnAfterRender(bool) ComponentBase.OnAfterRenderAsync(bool) ComponentBase.InvokeAsync(Action) ComponentBase.InvokeAsync(Func<Task>) ComponentBase.DispatchExceptionAsync(Exception) ComponentBase.SetParametersAsync(ParameterView) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BuildRenderTree(RenderTreeBuilder) Renders the component to the supplied RenderTreeBuilder. protected override void BuildRenderTree(RenderTreeBuilder __builder) Parameters __builder RenderTreeBuilder"
+  },
+  "api/BlazorApp.Components.Layout.MainLayout.html": {
+    "href": "api/BlazorApp.Components.Layout.MainLayout.html",
+    "title": "Class MainLayout | BotBtpRanker",
+    "keywords": "Class MainLayout Namespace BlazorApp.Components.Layout Assembly BlazorApp.dll public class MainLayout : LayoutComponentBase, IComponent, IHandleEvent, IHandleAfterRender Inheritance object ComponentBase LayoutComponentBase MainLayout Implements IComponent IHandleEvent IHandleAfterRender Inherited Members LayoutComponentBase.SetParametersAsync(ParameterView) LayoutComponentBase.Body ComponentBase.OnInitialized() ComponentBase.OnInitializedAsync() ComponentBase.OnParametersSet() ComponentBase.OnParametersSetAsync() ComponentBase.StateHasChanged() ComponentBase.ShouldRender() ComponentBase.OnAfterRender(bool) ComponentBase.OnAfterRenderAsync(bool) ComponentBase.InvokeAsync(Action) ComponentBase.InvokeAsync(Func<Task>) ComponentBase.DispatchExceptionAsync(Exception) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BuildRenderTree(RenderTreeBuilder) Renders the component to the supplied RenderTreeBuilder. protected override void BuildRenderTree(RenderTreeBuilder __builder) Parameters __builder RenderTreeBuilder"
+  },
+  "api/BlazorApp.Components.Layout.NavMenu.html": {
+    "href": "api/BlazorApp.Components.Layout.NavMenu.html",
+    "title": "Class NavMenu | BotBtpRanker",
+    "keywords": "Class NavMenu Namespace BlazorApp.Components.Layout Assembly BlazorApp.dll public class NavMenu : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender Inheritance object ComponentBase NavMenu Implements IComponent IHandleEvent IHandleAfterRender Inherited Members ComponentBase.OnInitialized() ComponentBase.OnInitializedAsync() ComponentBase.OnParametersSet() ComponentBase.OnParametersSetAsync() ComponentBase.StateHasChanged() ComponentBase.ShouldRender() ComponentBase.OnAfterRender(bool) ComponentBase.OnAfterRenderAsync(bool) ComponentBase.InvokeAsync(Action) ComponentBase.InvokeAsync(Func<Task>) ComponentBase.DispatchExceptionAsync(Exception) ComponentBase.SetParametersAsync(ParameterView) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BuildRenderTree(RenderTreeBuilder) Renders the component to the supplied RenderTreeBuilder. protected override void BuildRenderTree(RenderTreeBuilder __builder) Parameters __builder RenderTreeBuilder"
+  },
+  "api/BlazorApp.Components.Layout.html": {
+    "href": "api/BlazorApp.Components.Layout.html",
+    "title": "Namespace BlazorApp.Components.Layout | BotBtpRanker",
+    "keywords": "Namespace BlazorApp.Components.Layout Classes MainLayout NavMenu"
+  },
+  "api/BlazorApp.Components.Pages.Bot.html": {
+    "href": "api/BlazorApp.Components.Pages.Bot.html",
+    "title": "Class Bot | BotBtpRanker",
+    "keywords": "Class Bot Namespace BlazorApp.Components.Pages Assembly BlazorApp.dll [Route(\"/bot\")] public class Bot : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender Inheritance object ComponentBase Bot Implements IComponent IHandleEvent IHandleAfterRender Inherited Members ComponentBase.OnInitialized() ComponentBase.OnInitializedAsync() ComponentBase.OnParametersSet() ComponentBase.OnParametersSetAsync() ComponentBase.StateHasChanged() ComponentBase.ShouldRender() ComponentBase.OnAfterRender(bool) ComponentBase.OnAfterRenderAsync(bool) ComponentBase.InvokeAsync(Action) ComponentBase.InvokeAsync(Func<Task>) ComponentBase.DispatchExceptionAsync(Exception) ComponentBase.SetParametersAsync(ParameterView) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BuildRenderTree(RenderTreeBuilder) Renders the component to the supplied RenderTreeBuilder. protected override void BuildRenderTree(RenderTreeBuilder __builder) Parameters __builder RenderTreeBuilder"
+  },
+  "api/BlazorApp.Components.Pages.Btp.html": {
+    "href": "api/BlazorApp.Components.Pages.Btp.html",
+    "title": "Class Btp | BotBtpRanker",
+    "keywords": "Class Btp Namespace BlazorApp.Components.Pages Assembly BlazorApp.dll [Route(\"/btp\")] public class Btp : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender Inheritance object ComponentBase Btp Implements IComponent IHandleEvent IHandleAfterRender Inherited Members ComponentBase.OnInitialized() ComponentBase.OnInitializedAsync() ComponentBase.OnParametersSet() ComponentBase.OnParametersSetAsync() ComponentBase.StateHasChanged() ComponentBase.ShouldRender() ComponentBase.OnAfterRender(bool) ComponentBase.OnAfterRenderAsync(bool) ComponentBase.InvokeAsync(Action) ComponentBase.InvokeAsync(Func<Task>) ComponentBase.DispatchExceptionAsync(Exception) ComponentBase.SetParametersAsync(ParameterView) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BuildRenderTree(RenderTreeBuilder) Renders the component to the supplied RenderTreeBuilder. protected override void BuildRenderTree(RenderTreeBuilder __builder) Parameters __builder RenderTreeBuilder"
+  },
+  "api/BlazorApp.Components.Pages.Error.html": {
+    "href": "api/BlazorApp.Components.Pages.Error.html",
+    "title": "Class Error | BotBtpRanker",
+    "keywords": "Class Error Namespace BlazorApp.Components.Pages Assembly BlazorApp.dll [Route(\"/Error\")] public class Error : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender Inheritance object ComponentBase Error Implements IComponent IHandleEvent IHandleAfterRender Inherited Members ComponentBase.OnInitializedAsync() ComponentBase.OnParametersSet() ComponentBase.OnParametersSetAsync() ComponentBase.StateHasChanged() ComponentBase.ShouldRender() ComponentBase.OnAfterRender(bool) ComponentBase.OnAfterRenderAsync(bool) ComponentBase.InvokeAsync(Action) ComponentBase.InvokeAsync(Func<Task>) ComponentBase.DispatchExceptionAsync(Exception) ComponentBase.SetParametersAsync(ParameterView) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BuildRenderTree(RenderTreeBuilder) Renders the component to the supplied RenderTreeBuilder. protected override void BuildRenderTree(RenderTreeBuilder __builder) Parameters __builder RenderTreeBuilder OnInitialized() Method invoked when the component is ready to start, having received its initial parameters from its parent in the render tree. protected override void OnInitialized()"
+  },
+  "api/BlazorApp.Components.Pages.Home.html": {
+    "href": "api/BlazorApp.Components.Pages.Home.html",
+    "title": "Class Home | BotBtpRanker",
+    "keywords": "Class Home Namespace BlazorApp.Components.Pages Assembly BlazorApp.dll [Route(\"/\")] public class Home : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender Inheritance object ComponentBase Home Implements IComponent IHandleEvent IHandleAfterRender Inherited Members ComponentBase.OnInitialized() ComponentBase.OnInitializedAsync() ComponentBase.OnParametersSet() ComponentBase.OnParametersSetAsync() ComponentBase.StateHasChanged() ComponentBase.ShouldRender() ComponentBase.OnAfterRender(bool) ComponentBase.OnAfterRenderAsync(bool) ComponentBase.InvokeAsync(Action) ComponentBase.InvokeAsync(Func<Task>) ComponentBase.DispatchExceptionAsync(Exception) ComponentBase.SetParametersAsync(ParameterView) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BuildRenderTree(RenderTreeBuilder) Renders the component to the supplied RenderTreeBuilder. protected override void BuildRenderTree(RenderTreeBuilder __builder) Parameters __builder RenderTreeBuilder"
+  },
+  "api/BlazorApp.Components.Pages.html": {
+    "href": "api/BlazorApp.Components.Pages.html",
+    "title": "Namespace BlazorApp.Components.Pages | BotBtpRanker",
+    "keywords": "Namespace BlazorApp.Components.Pages Classes Bot Btp Error Home"
+  },
+  "api/BlazorApp.Components.Pieces.BondList.html": {
+    "href": "api/BlazorApp.Components.Pieces.BondList.html",
+    "title": "Class BondList | BotBtpRanker",
+    "keywords": "Class BondList Namespace BlazorApp.Components.Pieces Assembly BlazorApp.dll [StreamRendering(true)] public class BondList : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender Inheritance object ComponentBase BondList Implements IComponent IHandleEvent IHandleAfterRender Inherited Members ComponentBase.OnInitialized() ComponentBase.OnParametersSet() ComponentBase.OnParametersSetAsync() ComponentBase.StateHasChanged() ComponentBase.ShouldRender() ComponentBase.OnAfterRender(bool) ComponentBase.OnAfterRenderAsync(bool) ComponentBase.InvokeAsync(Action) ComponentBase.InvokeAsync(Func<Task>) ComponentBase.DispatchExceptionAsync(Exception) ComponentBase.SetParametersAsync(ParameterView) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Instrument [Parameter] public string Instrument { get; set; } Property Value string NumberOfBondsToShow [Parameter] public int? NumberOfBondsToShow { get; set; } Property Value int? Methods BuildRenderTree(RenderTreeBuilder) Renders the component to the supplied RenderTreeBuilder. protected override void BuildRenderTree(RenderTreeBuilder __builder) Parameters __builder RenderTreeBuilder OnInitializedAsync() Method invoked when the component is ready to start, having received its initial parameters from its parent in the render tree. Override this method if you will perform an asynchronous operation and want the component to refresh when that operation is completed. protected override Task OnInitializedAsync() Returns Task A Task representing any asynchronous operation."
+  },
+  "api/BlazorApp.Components.Pieces.html": {
+    "href": "api/BlazorApp.Components.Pieces.html",
+    "title": "Namespace BlazorApp.Components.Pieces | BotBtpRanker",
+    "keywords": "Namespace BlazorApp.Components.Pieces Classes BondList"
+  },
+  "api/BlazorApp.Components.Routes.html": {
+    "href": "api/BlazorApp.Components.Routes.html",
+    "title": "Class Routes | BotBtpRanker",
+    "keywords": "Class Routes Namespace BlazorApp.Components Assembly BlazorApp.dll public class Routes : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender Inheritance object ComponentBase Routes Implements IComponent IHandleEvent IHandleAfterRender Inherited Members ComponentBase.OnInitialized() ComponentBase.OnInitializedAsync() ComponentBase.OnParametersSet() ComponentBase.OnParametersSetAsync() ComponentBase.StateHasChanged() ComponentBase.ShouldRender() ComponentBase.OnAfterRender(bool) ComponentBase.OnAfterRenderAsync(bool) ComponentBase.InvokeAsync(Action) ComponentBase.InvokeAsync(Func<Task>) ComponentBase.DispatchExceptionAsync(Exception) ComponentBase.SetParametersAsync(ParameterView) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BuildRenderTree(RenderTreeBuilder) Renders the component to the supplied RenderTreeBuilder. protected override void BuildRenderTree(RenderTreeBuilder __builder) Parameters __builder RenderTreeBuilder"
+  },
+  "api/BlazorApp.Components._Imports.html": {
+    "href": "api/BlazorApp.Components._Imports.html",
+    "title": "Class _Imports | BotBtpRanker",
+    "keywords": "Class _Imports Namespace BlazorApp.Components Assembly BlazorApp.dll public class _Imports : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender Inheritance object ComponentBase _Imports Implements IComponent IHandleEvent IHandleAfterRender Inherited Members ComponentBase.OnInitialized() ComponentBase.OnInitializedAsync() ComponentBase.OnParametersSet() ComponentBase.OnParametersSetAsync() ComponentBase.StateHasChanged() ComponentBase.ShouldRender() ComponentBase.OnAfterRender(bool) ComponentBase.OnAfterRenderAsync(bool) ComponentBase.InvokeAsync(Action) ComponentBase.InvokeAsync(Func<Task>) ComponentBase.DispatchExceptionAsync(Exception) ComponentBase.SetParametersAsync(ParameterView) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BuildRenderTree(RenderTreeBuilder) Renders the component to the supplied RenderTreeBuilder. protected override void BuildRenderTree(RenderTreeBuilder __builder) Parameters __builder RenderTreeBuilder"
+  },
+  "api/BlazorApp.Components.html": {
+    "href": "api/BlazorApp.Components.html",
+    "title": "Namespace BlazorApp.Components | BotBtpRanker",
+    "keywords": "Namespace BlazorApp.Components Classes App Routes _Imports"
+  },
+  "api/BlazorApp.HostedServices.TimedDataFetcher.html": {
+    "href": "api/BlazorApp.HostedServices.TimedDataFetcher.html",
+    "title": "Class TimedDataFetcher | BotBtpRanker",
+    "keywords": "Class TimedDataFetcher Namespace BlazorApp.HostedServices Assembly BlazorApp.dll public class TimedDataFetcher : IHostedService, IDisposable Inheritance object TimedDataFetcher Implements IHostedService IDisposable Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors TimedDataFetcher(IServiceProvider) public TimedDataFetcher(IServiceProvider serviceProvider) Parameters serviceProvider IServiceProvider Methods Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. public void Dispose() StartAsync(CancellationToken) Triggered when the application host is ready to start the service. public Task StartAsync(CancellationToken stoppingToken) Parameters stoppingToken CancellationToken Returns Task A Task that represents the asynchronous Start operation. StopAsync(CancellationToken) Triggered when the application host is performing a graceful shutdown. public Task StopAsync(CancellationToken stoppingToken) Parameters stoppingToken CancellationToken Returns Task A Task that represents the asynchronous Stop operation."
+  },
+  "api/BlazorApp.HostedServices.html": {
+    "href": "api/BlazorApp.HostedServices.html",
+    "title": "Namespace BlazorApp.HostedServices | BotBtpRanker",
+    "keywords": "Namespace BlazorApp.HostedServices Classes TimedDataFetcher"
+  },
+  "api/Domain.Entities.Bond.html": {
+    "href": "api/Domain.Entities.Bond.html",
+    "title": "Class Bond | BotBtpRanker",
+    "keywords": "Class Bond Namespace Domain.Entities Assembly Domain.dll Represents a bond entity. public class Bond Inheritance object Bond Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Bond() Default constructor for the Bond class. public Bond() Bond(string, string, double?, DateTime, string, string) Parameterized constructor for the Bond class. public Bond(string isin, string name, double? yearlyCoupon, DateTime expiration, string detailsUrl, string bondType) Parameters isin string The ISIN of the bond. name string The name of the bond. yearlyCoupon double? The yearly coupon rate of the bond. expiration DateTime The expiration date of the bond. detailsUrl string The URL providing details about the bond. bondType string The type of the bond. Properties BondType The type of the bond. public string BondType { get; set; } Property Value string Expiration The expiration date of the bond. public DateTime Expiration { get; set; } Property Value DateTime HistoricalValues The historical values associated with the bond. public List<BondValues> HistoricalValues { get; set; } Property Value List<BondValues> Isin The International Securities Identification Number (ISIN) of the bond. public string Isin { get; set; } Property Value string Name The name of the bond. public string Name { get; set; } Property Value string Url The URL providing details about the bond. public string Url { get; set; } Property Value string YearlyCoupon The yearly coupon rate of the bond. public double? YearlyCoupon { get; set; } Property Value double? Methods FillHistoricalData(List<BondValues>) Fills historical data for the bond. public void FillHistoricalData(List<BondValues> historicalValues) Parameters historicalValues List<BondValues> The historical values to be filled."
+  },
+  "api/Domain.Entities.BondSnapshot.html": {
+    "href": "api/Domain.Entities.BondSnapshot.html",
+    "title": "Class BondSnapshot | BotBtpRanker",
+    "keywords": "Class BondSnapshot Namespace Domain.Entities Assembly Domain.dll Represents a snapshot of bond data at a specific time. public class BondSnapshot Inheritance object BondSnapshot Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors BondSnapshot(DateTime, string, string, double?, DateTime, string, string, double, double) Initializes a new instance of the BondSnapshot class with specified parameters. public BondSnapshot(DateTime snapshotDateTime, string isin, string name, double? yearlyCoupon, DateTime expiration, string detailsUrl, string bondType, double price, double yield) Parameters snapshotDateTime DateTime The UTC timestamp of the snapshot. isin string The ISIN of the bond. name string The name of the bond. yearlyCoupon double? The yearly coupon rate of the bond. expiration DateTime The expiration date of the bond. detailsUrl string The URL providing details about the bond. bondType string The type of the bond. price double The price of the bond. yield double The yield of the bond. Properties BondType The type of the bond. public string BondType { get; set; } Property Value string Expiration The expiration date of the bond. public DateTime Expiration { get; } Property Value DateTime Isin The International Securities Identification Number (ISIN) of the bond. public string Isin { get; set; } Property Value string Name The name of the bond. public string Name { get; set; } Property Value string Price The price of the bond. public double Price { get; set; } Property Value double Url The URL providing details about the bond. public string Url { get; set; } Property Value string UtcTime The UTC timestamp of the snapshot. public DateTime UtcTime { get; set; } Property Value DateTime YearlyCoupon The yearly coupon rate of the bond. public double? YearlyCoupon { get; } Property Value double? Yield The yield of the bond. public double Yield { get; set; } Property Value double"
+  },
+  "api/Domain.Entities.BondValues.html": {
+    "href": "api/Domain.Entities.BondValues.html",
+    "title": "Class BondValues | BotBtpRanker",
+    "keywords": "Class BondValues Namespace Domain.Entities Assembly Domain.dll Represents the values associated with a bond at a specific time. public class BondValues Inheritance object BondValues Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors BondValues() Default constructor for the BondValues class. public BondValues() BondValues(double, double, DateTime) Initializes a new instance of the BondValues class with specified parameters. public BondValues(double price, double annualizedGrossYield, DateTime dateTime) Parameters price double The price of the bond. annualizedGrossYield double The yield of the bond. dateTime DateTime The UTC timestamp associated with the bond values. Properties Price The price of the bond. public double Price { get; set; } Property Value double UtcTime The UTC timestamp associated with the bond values. public DateTime UtcTime { get; } Property Value DateTime Yield The yield of the bond. public double Yield { get; set; } Property Value double"
+  },
+  "api/Domain.Entities.html": {
+    "href": "api/Domain.Entities.html",
+    "title": "Namespace Domain.Entities | BotBtpRanker",
+    "keywords": "Namespace Domain.Entities Classes Bond Represents a bond entity. BondSnapshot Represents a snapshot of bond data at a specific time. BondValues Represents the values associated with a bond at a specific time."
+  },
+  "api/Domain.Exeptions.FailedToParseExeption.html": {
+    "href": "api/Domain.Exeptions.FailedToParseExeption.html",
+    "title": "Class FailedToParseExeption | BotBtpRanker",
+    "keywords": "Class FailedToParseExeption Namespace Domain.Exeptions Assembly Domain.dll public class FailedToParseExeption : Exception, ISerializable Inheritance object Exception FailedToParseExeption Implements ISerializable Inherited Members Exception.GetBaseException() Exception.GetType() Exception.ToString() Exception.Data Exception.HelpLink Exception.HResult Exception.InnerException Exception.Message Exception.Source Exception.StackTrace Exception.TargetSite Exception.SerializeObjectState object.Equals(object) object.Equals(object, object) object.GetHashCode() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors FailedToParseExeption(string) public FailedToParseExeption(string message) Parameters message string"
+  },
+  "api/Domain.Exeptions.FailedToScrapeExeption.html": {
+    "href": "api/Domain.Exeptions.FailedToScrapeExeption.html",
+    "title": "Class FailedToScrapeExeption | BotBtpRanker",
+    "keywords": "Class FailedToScrapeExeption Namespace Domain.Exeptions Assembly Domain.dll public class FailedToScrapeExeption : Exception, ISerializable Inheritance object Exception FailedToScrapeExeption Implements ISerializable Inherited Members Exception.GetBaseException() Exception.GetType() Exception.ToString() Exception.Data Exception.HelpLink Exception.HResult Exception.InnerException Exception.Message Exception.Source Exception.StackTrace Exception.TargetSite Exception.SerializeObjectState object.Equals(object) object.Equals(object, object) object.GetHashCode() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors FailedToScrapeExeption(string) public FailedToScrapeExeption(string message) Parameters message string"
+  },
+  "api/Domain.Exeptions.html": {
+    "href": "api/Domain.Exeptions.html",
+    "title": "Namespace Domain.Exeptions | BotBtpRanker",
+    "keywords": "Namespace Domain.Exeptions Classes FailedToParseExeption FailedToScrapeExeption"
+  },
+  "api/Infrastructure.DependencyInjection.html": {
+    "href": "api/Infrastructure.DependencyInjection.html",
+    "title": "Class DependencyInjection | BotBtpRanker",
+    "keywords": "Class DependencyInjection Namespace Infrastructure Assembly Infrastructure.dll public static class DependencyInjection Inheritance object DependencyInjection Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddInfrastructureServices(IServiceCollection) public static IServiceCollection AddInfrastructureServices(this IServiceCollection service) Parameters service IServiceCollection Returns IServiceCollection"
+  },
+  "api/Infrastructure.Fetcher.BondFetcher.html": {
+    "href": "api/Infrastructure.Fetcher.BondFetcher.html",
+    "title": "Class BondFetcher | BotBtpRanker",
+    "keywords": "Class BondFetcher Namespace Infrastructure.Fetcher Assembly Infrastructure.dll Represents a service for fetching bonds. public class BondFetcher : IBondFetcher Inheritance object BondFetcher Implements IBondFetcher Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors BondFetcher(NtpClock, IOptions<FetcherOptions>) public BondFetcher(NtpClock ntpClock, IOptions<FetcherOptions> fetcherOptions) Parameters ntpClock NtpClock fetcherOptions IOptions<FetcherOptions> Methods FetchBondsAsync(string) Fetches bond snapshots asynchronously based on the specified type of bond. public Task<IEnumerable<BondSnapshot>> FetchBondsAsync(string typeOfBond) Parameters typeOfBond string The type of bond to fetch. Returns Task<IEnumerable<BondSnapshot>> A collection of bond snapshots."
+  },
+  "api/Infrastructure.Fetcher.html": {
+    "href": "api/Infrastructure.Fetcher.html",
+    "title": "Namespace Infrastructure.Fetcher | BotBtpRanker",
+    "keywords": "Namespace Infrastructure.Fetcher Classes BondFetcher Represents a service for fetching bonds."
+  },
+  "api/Infrastructure.Mapping.AutoMapperProfile.html": {
+    "href": "api/Infrastructure.Mapping.AutoMapperProfile.html",
+    "title": "Class AutoMapperProfile | BotBtpRanker",
+    "keywords": "Class AutoMapperProfile Namespace Infrastructure.Mapping Assembly Infrastructure.dll public class AutoMapperProfile : Profile, IProfileExpression, IProfileConfiguration Inheritance object Profile AutoMapperProfile Implements IProfileExpression IProfileConfiguration Inherited Members Profile.DisableConstructorMapping() Profile.CreateProjection<TSource, TDestination>() Profile.CreateProjection<TSource, TDestination>(MemberList) Profile.CreateMap<TSource, TDestination>() Profile.CreateMap<TSource, TDestination>(MemberList) Profile.CreateMap(Type, Type) Profile.CreateMap(Type, Type, MemberList) Profile.ClearPrefixes() Profile.ReplaceMemberName(string, string) Profile.RecognizePrefixes(params string[]) Profile.RecognizePostfixes(params string[]) Profile.RecognizeDestinationPrefixes(params string[]) Profile.RecognizeDestinationPostfixes(params string[]) Profile.AddGlobalIgnore(string) Profile.IncludeSourceExtensionMethods(Type) Profile.ProfileName Profile.AllowNullDestinationValues Profile.AllowNullCollections Profile.ShouldMapProperty Profile.ShouldMapField Profile.ShouldMapMethod Profile.ShouldUseConstructor Profile.SourceMemberNamingConvention Profile.DestinationMemberNamingConvention Profile.ValueTransformers object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors AutoMapperProfile() public AutoMapperProfile()"
+  },
+  "api/Infrastructure.Mapping.html": {
+    "href": "api/Infrastructure.Mapping.html",
+    "title": "Namespace Infrastructure.Mapping | BotBtpRanker",
+    "keywords": "Namespace Infrastructure.Mapping Classes AutoMapperProfile"
+  },
+  "api/Infrastructure.Options.DatabaseOptions.html": {
+    "href": "api/Infrastructure.Options.DatabaseOptions.html",
+    "title": "Class DatabaseOptions | BotBtpRanker",
+    "keywords": "Class DatabaseOptions Namespace Infrastructure.Options Assembly Infrastructure.dll public class DatabaseOptions Inheritance object DatabaseOptions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields Key public const string Key = \"DatabaseSettings\" Field Value string Properties Host public string Host { get; set; } Property Value string Password public string Password { get; set; } Property Value string Port public string Port { get; set; } Property Value string Userid public string Userid { get; set; } Property Value string UsersDataBase public string UsersDataBase { get; set; } Property Value string"
+  },
+  "api/Infrastructure.Options.FetcherOptions.html": {
+    "href": "api/Infrastructure.Options.FetcherOptions.html",
+    "title": "Class FetcherOptions | BotBtpRanker",
+    "keywords": "Class FetcherOptions Namespace Infrastructure.Options Assembly Infrastructure.dll public class FetcherOptions Inheritance object FetcherOptions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields Key public const string Key = \"Fetching\" Field Value string Properties Base public string Base { get; set; } Property Value string"
+  },
+  "api/Infrastructure.Options.html": {
+    "href": "api/Infrastructure.Options.html",
+    "title": "Namespace Infrastructure.Options | BotBtpRanker",
+    "keywords": "Namespace Infrastructure.Options Classes DatabaseOptions FetcherOptions"
+  },
+  "api/Infrastructure.Repository.BondRepository.html": {
+    "href": "api/Infrastructure.Repository.BondRepository.html",
+    "title": "Class BondRepository | BotBtpRanker",
+    "keywords": "Class BondRepository Namespace Infrastructure.Repository Assembly Infrastructure.dll Represents a service for storing bonds. public class BondRepository : IBondRepository Inheritance object BondRepository Implements IBondRepository Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors BondRepository(IMapper, IOptions<DatabaseOptions>) public BondRepository(IMapper mapper, IOptions<DatabaseOptions> options) Parameters mapper IMapper options IOptions<DatabaseOptions> Methods CreateDatabaseIfNotExists() Creates the database if it doesn't exist. public void CreateDatabaseIfNotExists() CreateTablesIfNotExists() Creates tables if they don't exist. public void CreateTablesIfNotExists() GetActiveBondsAsync(string) Retrieves active bonds asynchronously based on the bond type. public Task<IList<Bond>> GetActiveBondsAsync(string typeOfBond) Parameters typeOfBond string Type of bond. Returns Task<IList<Bond>> List of active bonds. StoreBondSnapshots(IEnumerable<BondSnapshot>, string) Stores bond snapshots. public void StoreBondSnapshots(IEnumerable<BondSnapshot> bondSnapshots, string typeOfBond) Parameters bondSnapshots IEnumerable<BondSnapshot> Bond snapshots to store. typeOfBond string Type of bond."
+  },
+  "api/Infrastructure.Repository.Models.BondDbModel.html": {
+    "href": "api/Infrastructure.Repository.Models.BondDbModel.html",
+    "title": "Class BondDbModel | BotBtpRanker",
+    "keywords": "Class BondDbModel Namespace Infrastructure.Repository.Models Assembly Infrastructure.dll public class BondDbModel Inheritance object BondDbModel Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties BondId public int? BondId { get; set; } Property Value int? BondType public string BondType { get; set; } Property Value string Expiration public DateTime Expiration { get; set; } Property Value DateTime HistoricalValues public List<BondValuesDbModel> HistoricalValues { get; set; } Property Value List<BondValuesDbModel> IsActive public bool IsActive { get; set; } Property Value bool Isin public string Isin { get; set; } Property Value string Name public string Name { get; set; } Property Value string Url public string Url { get; set; } Property Value string YearlyCoupon public double? YearlyCoupon { get; set; } Property Value double?"
+  },
+  "api/Infrastructure.Repository.Models.BondSnapshotDbModel.html": {
+    "href": "api/Infrastructure.Repository.Models.BondSnapshotDbModel.html",
+    "title": "Class BondSnapshotDbModel | BotBtpRanker",
+    "keywords": "Class BondSnapshotDbModel Namespace Infrastructure.Repository.Models Assembly Infrastructure.dll public class BondSnapshotDbModel Inheritance object BondSnapshotDbModel Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties BondId public int? BondId { get; set; } Property Value int? BondType public string BondType { get; set; } Property Value string Expiration public DateTime Expiration { get; set; } Property Value DateTime IsActive public bool IsActive { get; set; } Property Value bool Isin public string Isin { get; set; } Property Value string Name public string Name { get; set; } Property Value string Price public double Price { get; set; } Property Value double Url public string Url { get; set; } Property Value string UtcTime public DateTime UtcTime { get; set; } Property Value DateTime YearlyCoupon public double? YearlyCoupon { get; set; } Property Value double? Yield public double Yield { get; set; } Property Value double"
+  },
+  "api/Infrastructure.Repository.Models.BondValuesDbModel.html": {
+    "href": "api/Infrastructure.Repository.Models.BondValuesDbModel.html",
+    "title": "Class BondValuesDbModel | BotBtpRanker",
+    "keywords": "Class BondValuesDbModel Namespace Infrastructure.Repository.Models Assembly Infrastructure.dll public class BondValuesDbModel Inheritance object BondValuesDbModel Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties BondId public int? BondId { get; set; } Property Value int? Price public double Price { get; set; } Property Value double UtcTime public DateTime UtcTime { get; } Property Value DateTime Yield public double Yield { get; set; } Property Value double"
+  },
+  "api/Infrastructure.Repository.Models.html": {
+    "href": "api/Infrastructure.Repository.Models.html",
+    "title": "Namespace Infrastructure.Repository.Models | BotBtpRanker",
+    "keywords": "Namespace Infrastructure.Repository.Models Classes BondDbModel BondSnapshotDbModel BondValuesDbModel"
+  },
+  "api/Infrastructure.Repository.html": {
+    "href": "api/Infrastructure.Repository.html",
+    "title": "Namespace Infrastructure.Repository | BotBtpRanker",
+    "keywords": "Namespace Infrastructure.Repository Classes BondRepository Represents a service for storing bonds."
+  },
+  "api/Infrastructure.html": {
+    "href": "api/Infrastructure.html",
+    "title": "Namespace Infrastructure | BotBtpRanker",
+    "keywords": "Namespace Infrastructure Classes DependencyInjection"
+  },
+  "api/Tests.BondFetcherTests.html": {
+    "href": "api/Tests.BondFetcherTests.html",
+    "title": "Class BondFetcherTests | BotBtpRanker",
+    "keywords": "Class BondFetcherTests Namespace Tests Assembly Tests.dll public class BondFetcherTests Inheritance object BondFetcherTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors BondFetcherTests() public BondFetcherTests() Methods ExtractBondUrls_ShouldSucceed(string) [Theory] [InlineData(new object[] { \"BOT\" })] [InlineData(new object[] { \"BTP\" })] public Task ExtractBondUrls_ShouldSucceed(string typeOfBond) Parameters typeOfBond string Returns Task"
+  },
+  "api/Tests.BondRepositoryTests.html": {
+    "href": "api/Tests.BondRepositoryTests.html",
+    "title": "Class BondRepositoryTests | BotBtpRanker",
+    "keywords": "Class BondRepositoryTests Namespace Tests Assembly Tests.dll public class BondRepositoryTests Inheritance object BondRepositoryTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors BondRepositoryTests() public BondRepositoryTests() Methods StoreBondSnapshots_ShouldSucceed() [Fact] public void StoreBondSnapshots_ShouldSucceed()"
+  },
+  "api/Tests.html": {
+    "href": "api/Tests.html",
+    "title": "Namespace Tests | BotBtpRanker",
+    "keywords": "Namespace Tests Classes BondFetcherTests BondRepositoryTests"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "BotBtpRanker | BotBtpRanker",
+    "keywords": "BotBtpRanker This project extracts data related to Italian government bonds (BOT and BTP) from free resources and stores it into a SQL Server database. It provides functionality to retrieve all active bonds at any specific time and sort them by their yield to maturity (feature usually not provided on other platforms), aiding in investment decision-making. The UI is a Blazor Web App. Why use BotBtpRanker? To quickly find the Italian government bonds with the highest yield to maturity. Most websites listing these instruments do not provide this feature (at least not for free). Screenshots Features Data Extraction: Extracts Italian government bond data (BOT and BTP) from a reliable data source. Database Storage: Stores the extracted bond data into a SQL Server database for easy retrieval and management. Dynamic Sorting: Can sort the current active bonds based on their yield to maturity, expiration date, price or yearly coupon, providing users with insights into investment options. Usage (Note: for the app to work you will need to add the correct data in the appsettings.json file, contact me for it.) To use this, follow these steps: Ensure you have Docker installed on your machine. Clone this repository to your local machine by running the following command: git clone https://github.com/andrea-baragiola/BotBtpRanker.git Open a terminal window inside the root directory of the cloned repository Run the following command to start the app: docker-compose up Once the services are up and running, you can access the Blazor app at https://localhost:64085. You can also access the MSSQL database at localhost:11433. Clone this Clone this repository to your local machine by running the following command: git clone https://github.com/andrea-baragiola/BotBtpRanker.git Requirements Docker Internet connection (for downloading Docker images if not already cached) Contributing Contributions are welcome! If you'd like to improve this project, feel free to fork it and submit a pull request. License This project is licensed under the MIT License"
+  }
+}
